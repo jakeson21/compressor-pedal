@@ -390,7 +390,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "error",
@@ -432,10 +432,7 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "+9V": "9V",
-      "-9V": "-9V"
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -491,6 +488,10 @@
     [
       "c3b547c8-a174-4014-9b08-0ed72f794957",
       "Volume Detector"
+    ],
+    [
+      "1056e590-cc3a-4eaa-a07a-7246d2b49ea9",
+      "Volume Control"
     ]
   ],
   "text_variables": {}
