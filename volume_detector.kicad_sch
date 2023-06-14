@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "Compressor")
-    (date "2023-05-27")
-    (rev "0.1")
+    (title "Compressor Pedal")
+    (date "2023-06-12")
+    (rev "0.2")
     (company "Jacob Miller")
     (comment 1 "Volume Detection Circuit")
     (comment 4 "All resistors are 1% unless noted")
@@ -978,6 +978,13 @@
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 39d99f4d-edf4-4cf2-b534-784575dbb5e8)
   )
+  (text_box "** Need to make Release last 10x longer"
+    (at 161.29 76.2 0) (size 27.94 8.89)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 5105ffd9-c43a-472f-b921-5ff31fb5a9e7)
+  )
   (text_box "TI https://www.ti.com/lit/an/sboa068/sboa068.pdf Absolute Value Circui"
     (at 46.99 78.74 0) (size 78.74 67.31)
     (stroke (width 0) (type default))
@@ -993,7 +1000,7 @@
     (uuid efa81c46-9798-4b65-9797-73daf13278a4)
   )
 
-  (text "Reference Voltage\n9V * 33/(20+33) = 3.4V\nAssumes envelope voltage of less \nthan 3.3V to allow turning off\n\nOr for 5V envelope\n9V * 33/(20+47) = 5.3V"
+  (text "Reference Voltage\n9V * 33/(20+33) = 3.4V\nAssumes envelope voltage of less \nthan 3.3V to allow turning off\n\nOr for 5V envelope\n9V * 15/(20+15) = 5.143V"
     (at 218.44 73.66 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 14c044e4-e435-4f4a-a952-d8165ede767b)
@@ -1071,7 +1078,7 @@
     (property "Value" "A20k" (at 196.85 107.95 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" (at 195.58 106.68 0)
+    (property "Footprint" "CustomLibrary:Potentiometer_Alps_RK163_Single_Horizontal_Pads_Only" (at 195.58 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 195.58 106.68 0)
@@ -1185,7 +1192,7 @@
     (property "Reference" "R4" (at 187.8711 118.11 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1k-4.7k" (at 189.7921 118.11 90)
+    (property "Value" "4.7k" (at 189.7921 118.11 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" (at 190.754 117.856 90)
@@ -1482,7 +1489,7 @@
     (property "Value" "B20k" (at 170.18 111.2125 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" (at 170.18 106.68 0)
+    (property "Footprint" "CustomLibrary:Potentiometer_Alps_RK163_Single_Horizontal_Pads_Only" (at 170.18 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 170.18 106.68 0)
@@ -1927,7 +1934,7 @@
     (property "Value" "B20k" (at 210.82 80.01 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" (at 212.09 81.28 0)
+    (property "Footprint" "CustomLibrary:Potentiometer_Alps_RK163_Single_Horizontal_Pads_Only" (at 212.09 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 212.09 81.28 0)
